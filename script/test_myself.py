@@ -15,7 +15,7 @@ class TestDemo:
         self.page = Page(self.driver)
 
     # 定义一个 test 函数来对应我们测试用例中执行结果为 “账号不存在” 的那一类用例
-    @pytest.mark.parametrize("args", [("18512381234", "123456", "账号不存在!"), ("18512381234", "abcdef", "账号不存在!")])
+    @pytest.mark.parametrize("args", [("18512381234", "123456", "账号不存在!")])
     def test_login_nonum(self,args):
 
         # 使用 首页模型当中的进入 首页的动作
@@ -48,6 +48,10 @@ class TestDemo:
         assert assert_stu
 
     def test_demo2(self):
+        print( "测试代码" )
+        assert 0
+
+    def test_demo3(self):
         print( "测试代码" )
         assert 0
 
