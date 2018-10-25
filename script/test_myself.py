@@ -47,6 +47,10 @@ class TestDemo:
 
         assert assert_stu
 
+    def test_demo2(self):
+        print( "测试代码" )
+        assert 0
+
 
 
 
